@@ -1,1 +1,1 @@
-tis is a python project on Static & Exception Handling 
+This is a python exception task markdown
