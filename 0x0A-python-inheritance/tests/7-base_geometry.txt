@@ -1,0 +1,18 @@
+Importing the module
+    >>> BaseG = __import__('7-base_geometry').BaseGeometry
+
+Checking for module docstring:
+	 >>> mod = __import__('7-base_geometry')
+	 >>> len(mod.__doc__) > 1
+	 True
+
+Checking for class docstring:
+	 >>> BaseG = mod.BaseGeometry
+	 >>> len(BaseG.__doc__) > 1
+	 True
+
+Checking for method docstring:
+	 >>> print_sorted = BaseG.print_sorted
+         >>> len(print_sorted.__doc__) > 1
+	 True
+

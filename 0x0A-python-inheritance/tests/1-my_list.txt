@@ -1,0 +1,36 @@
+Importing the module
+    >>> MyList = __import__('1-my_list').MyList
+
+Checking for module docstring:
+	 >>> mod = __import__('1-my_list')
+	 >>> len(mod.__doc__) > 1
+	 True
+
+Checking for class docstring:
+	 >>> MyClass = mod.MyList
+	 >>> len(MyClass.__doc__) > 1
+	 True
+
+Checking for method docstring:
+	 >>> print_sorted = MyClass.print_sorted
+         >>> len(print_sorted.__doc__) > 1
+	 True
+
+Check that class instaintiates to list
+    >>> my_list = MyList()
+    >>> print(my_list)
+    []
+
+Checks that sorting a my_list works
+    >>> my_list.append(1)
+    >>> my_list.append(4)
+    >>> my_list.append(2)
+    >>> my_list.append(3)
+    >>> my_list.append(5)
+    >>> print(my_list)
+    [1, 4, 2, 3, 5]
+    >>> my_list.print_sorted()
+    [1, 2, 3, 4, 5]
+    >>> print(my_list)
+    [1, 4, 2, 3, 5]
+
