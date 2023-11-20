@@ -1,0 +1,1 @@
+#Solutions to python object relational mapping.
